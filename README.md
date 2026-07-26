@@ -1,64 +1,64 @@
-# lanAi - Seu Assistente de IA Local e Inteligente
+# lanAi - Your Local and Intelligent AI Assistant
 
-**lanAi** é um assistente de IA generativa construído em Python, projetado para ser executado localmente. Ele pode aprender com seus documentos (PDFs) e outras fontes de dados para fornecer respostas inteligentes e contextualizadas, garantindo total privacidade e controle sobre suas informações.
+**lanAi** is a generative AI assistant built in Python, designed to run locally. It can learn from your documents (PDFs) and other data sources to provide intelligent, contextualized answers, ensuring full privacy and control over your information.
 
-O nome **lanAi** vem da combinação de **LAN** (Local Area Network) e **AI** (Inteligência Artificial), refletindo sua capacidade de operar em um ambiente local. Curiosamente, "lanai" é também uma palavra havaiana que significa uma varanda coberta ou pátio aberto - um espaço entre o técnico e o prático - assim como este assistente.
-
----
-
-## ✨ Funcionalidades Principais
-
-- **Aprendizado Local:** Extrai texto de arquivos PDF em um diretório local para construir sua base de conhecimento.
-- **Base de Conhecimento Expansível:** Permite a inserção manual de informações, além do aprendizado automático de documentos.
-- **Interface de Linha de Comando (CLI):** Um menu interativo e fácil de usar para gerenciar a base de conhecimento e interagir com a IA.
-- **Privacidade em Primeiro Lugar:** Como é executado localmente, seus dados nunca saem do seu computador.
-- **Modular e Extensível:** O código é organizado em módulos, facilitando a adição de novas funcionalidades e fontes de dados.
+The name **lanAi** comes from the combination of **LAN** (Local Area Network) and **AI** (Artificial Intelligence), reflecting its ability to operate in a local environment. Interestingly, "lanai" is also a Hawaiian word that means a covered veranda or open courtyard - a space between the technical and the practical - just like this assistant.
 
 ---
 
-## 🚀 Como Começar
+## ✨ Main Features
 
-### Pré-requisitos
+- **Local Learning:** Extracts text from PDF files in a local directory to build its knowledge base.
+- **Expandable Knowledge Base:** Allows manual insertion of information, in addition to automatic learning from documents.
+- **Command Line Interface (CLI):** An interactive and easy-to-use menu to manage the knowledge base and interact with the AI.
+- **Privacy First:** Because it runs locally, your data never leaves your computer.
+- **Modular and Extensible:** The code is organized into modules, making it easy to add new features and data sources.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 - Python 3.x
-- As bibliotecas listadas no arquivo `requirements.txt`
+- The libraries listed in the `requirements.txt` file
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/njfw50/lanAi.git
    cd lanAi
    ```
 
-2. Instale as dependências:
+2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Coloque os arquivos PDF que você deseja que o lanAi aprenda na pasta `pdfs`.
+3. Put the PDF files you want lanAi to learn from into the `pdfs` folder.
 
-### Execução
+### Running
 
-Para iniciar o assistente, execute o script principal:
+To start the assistant, run the main script:
 
 ```bash
 python lanAi.py
 ```
 
-Você será recebido com uma mensagem de boas-vindas e o menu principal, onde poderá escolher entre extrair texto de PDFs, inserir informações manualmente, pesquisar na base de conhecimento ou conversar com a IA.
+You will be greeted with a welcome message and the main menu, where you can choose between extracting text from PDFs, inserting information manually, searching the knowledge base, or chatting with the AI.
 
 ---
 
-## 🔧 Estrutura do Projeto
+## 🔧 Project Structure
 
-- `lanAi.py`: O ponto de entrada principal do aplicativo, contendo o menu e a lógica de interação com o usuário.
-- `lanai_core.py`: O "cérebro" do assistente, responsável por processar as perguntas e gerar respostas usando a base de conhecimento.
-- `lanAi_storage.py`: Gerencia o banco de dados SQLite onde todo o conhecimento é armazenado.
-- `pdfs/`: Diretório onde você deve colocar seus arquivos PDF para aprendizado.
+- `lanAi.py`: The main entry point of the application, containing the menu and the user interaction logic.
+- `lanai_core.py`: The assistant's "brain", responsible for processing questions and generating answers using the knowledge base.
+- `lanAi_storage.py`: Manages the SQLite database where all knowledge is stored.
+- `pdfs/`: Directory where you should place your PDF files for learning.
 
 ---
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* para relatar bugs ou sugerir novas funcionalidades. Se você quiser contribuir com código, por favor, abra um *pull request*.
+Contributions are welcome! Feel free to open an *issue* to report bugs or suggest new features. If you want to contribute code, please open a *pull request*.
